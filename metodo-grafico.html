@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/basic_styles.css">
+    <link rel="stylesheet" href="css/metodo-grafico.css">
+    <title>M&eacute;todo Gr&aacute;fico</title>
+</head>
+<body>
+    <nav class="mb-3 navbar navbar-expand-lg">
+        <a href="./index.html"><img src="" alt="logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-list" aria-controls="menu-list" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menu-list" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">M&eacute;todos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <!-- Formulario para capturar las ecuaciones -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">M&eacute;todo Gr&aacute;fico</h3>
+                    </div>
+                   <div class="card-body">
+                        <form action="#" method="post">
+                            <h4 class="card-title">Funci&oacute;n objetivo</h4>
+                            <div class="form-group row">
+                                <div class="equation">
+                                    <div>
+                                        <input type="number" class="variable" id="x1">
+                                        <label for="x1">x1</label>
+                                        <label class="mx-2 mb-0">+</label>
+                                        <input type="number" class="variable" id="x2">
+                                        <label for="x2" class="mb-0">x2</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="card-title">Restricciones</h4>
+                            <div class="form-group row">
+                                <div class="equation">
+                                    <div>
+                                        <input type="number" class="variable" id="r1-x1">
+                                        <label for="r1-x1">x1</label>
+                                        <label class="mx-2 mb-0">+</label>
+                                        <input type="number" class="variable" id="r1-x2">
+                                        <label for="r1-x2" class="mb-0">x2</label>
+                                    </div>
+                                    <select name="op-selector" class="variable">
+                                        <option value="less"><=</option>
+                                        <option value="greater">>=</option>
+                                    </select>
+                                    <input type="number" class="variable" id="r1-b2">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="equation">
+                                    <div>
+                                        <input type="number" class="variable" id="r2-x1">
+                                        <label for="r2-x1">x1</label>
+                                        <label class="mx-2 mb-0">+</label>
+                                        <input type="number" class="variable" id="r2-x2">
+                                        <label for="r2-x2" class="mb-0">x2</label>
+                                    </div>
+                                    <select name="op-selector" class="variable">
+                                        <option value="less"><=</option>
+                                        <option value="greater">>=</option>
+                                    </select>
+                                    <input type="number" class="variable" id="r2-b2">
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Calcular</button>
+                            </div>
+                        </form>
+                   </div>
+                </div>
+            </div>
+
+            <!-- Grafica con los resultados del problema -->
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts de bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
