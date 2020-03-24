@@ -16,6 +16,14 @@ const routes: Routes = [
       {
         path: 'inicio',
         loadChildren: () => import("./inicio/inicio.module").then(m => m.InicioModule)
+      },
+      {
+        path: 'metodo_grafico',
+        loadChildren: () => import("./metodografico/metodografico.module").then(m => m.MetodograficoModule)
+      },
+      {
+        path: 'dos_fases',
+        loadChildren: () => import("./metodo2fases/metodo2fases.module").then(m => m.Metodo2fasesModule)
       }
     ]
   }
