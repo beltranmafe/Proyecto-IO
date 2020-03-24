@@ -1,79 +1,26 @@
-<p>inicio works!</p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <!-- Formulario para capturar las ecuaciones -->
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">M&eacute;todo Gr&aacute;fico</h3>
-                    </div>
-                   <div class="card-body">
-                        <form action="#" method="post">
-                            <h4 class="card-title">Funci&oacute;n objetivo</h4>
-                            <div class="form-group row">
-                                <div class="equation">
-                                    <div>
-                                        <input type="number" class="variable" id="x1">
-                                        <label for="x1">x1</label>
-                                        <label class="mx-2 mb-0">+</label>
-                                        <input type="number" class="variable" id="x2">
-                                        <label for="x2" class="mb-0">x2</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4 class="card-title">Restricciones</h4>
-                            <div class="form-group row">
-                                <div class="equation">
-                                    <div>
-                                        <input type="number" class="variable" id="r1-x1">
-                                        <label for="r1-x1">x1</label>
-                                        <label class="mx-2 mb-0">+</label>
-                                        <input type="number" class="variable" id="r1-x2">
-                                        <label for="r1-x2" class="mb-0">x2</label>
-                                    </div>
-                                    <select name="op-selector" class="variable">
-                                        <option value="less"><=</option>
-                                        <option value="greater">>=</option>
-                                    </select>
-                                    <input type="number" class="variable" id="r1-b2">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="equation">
-                                    <div>
-                                        <input type="number" class="variable" id="r2-x1">
-                                        <label for="r2-x1">x1</label>
-                                        <label class="mx-2 mb-0">+</label>
-                                        <input type="number" class="variable" id="r2-x2">
-                                        <label for="r2-x2" class="mb-0">x2</label>
-                                    </div>
-                                    <select name="op-selector" class="variable">
-                                        <option value="less"><=</option>
-                                        <option value="greater">>=</option>
-                                    </select>
-                                    <input type="number" class="variable" id="r2-b2">
-                                </div>
-                            </div>
-                            <div class="submit">
-                                <button type="submit">Calcular</button>
-                            </div>
-                        </form>
-                   </div>
+    <div class="row justify-content-center">
+      <div class="col">
+          <!-- Codigo de bienvenida-->
+        <div class="card" style=" height: 100%;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <div class="row justify-content-center">
+                <div class="col-4">
+                    <a href="#" class="btn btn-primary">Dos Fases</a>
                 </div>
+                <div class="col-4">
+                    <a href="#" class="btn btn-primary">Grafico</a>
+                </div>
+              </div>
             </div>
-
-            <!-- Grafica con los resultados del problema -->
-            <div class="col">
-
-            </div>
-        </div>
+          </div>
+          <!-- Codigo de bienvenida-->
+      </div>
+      <div class="col">
+        <app-form-data></app-form-data>
+      </div>
     </div>
-  </body>
-</html>
