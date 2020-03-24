@@ -2,14 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MetodograficoRoutingModule } from './metodografico-routing.module';
-import { Prueba2Component } from './components/prueba2/prueba2.component';
+import { MetodoGraficoComponent } from './components/metodo-grafico/metodo-grafico.component';
+import { GraficoComponent } from './components/grafico/grafico.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [Prueba2Component],
+  declarations: [MetodoGraficoComponent, GraficoComponent],
   imports: [
     CommonModule,
-    MetodograficoRoutingModule
+    MetodograficoRoutingModule,
+    SharedModule
   ]
 })
 export class MetodograficoModule { }

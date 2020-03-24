@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Prueba2Component } from './components/prueba2/prueba2.component';
+import { MetodoGraficoComponent } from './components/metodo-grafico/metodo-grafico.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: Prueba2Component
+    component: MetodoGraficoComponent
   }
 ];
 
