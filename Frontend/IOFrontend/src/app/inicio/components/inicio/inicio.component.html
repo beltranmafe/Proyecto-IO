@@ -1,26 +1,57 @@
-
-    <div class="row justify-content-center">
-      <div class="col">
-          <!-- Codigo de bienvenida-->
-        <div class="card" style=" height: 100%;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              
-              <div class="row justify-content-center">
-                <div class="col-4">
-                    <a href="#" class="btn btn-primary">Dos Fases</a>
+<div class="main-container">
+    <!-- Panel lateral izquierdo -->
+    <div class="left-container">
+        
+        <nav class="nav-responsive">
+            <a href="/"><img id="logo" src="../../../../../../../Backend/images/logo.png" alt="logo.png"></a>
+            <!-- Menu desplegable para dispositivos con ancho menor a 1000px -->
+            <div class="dropleft">
+                <button id="boton-menu-responsive" data-toggle="dropdown" type="button">
+                    <img src="https://image.flaticon.com/icons/png/128/1828/1828664.png">
+                </button>
+                <div class="menu-resposive dropdown-menu" aria-labelledby="boton-menu-responsive">
+                    <a class="dropdown-item" href="#">Inicio</a>
+                    <a class="dropdown-item" href="#">M&eacute;todos</a>
+                    <a class="dropdown-item" href="#">Nosotros</a>
+                    <a class="dropdown-item" href="#">Ayuda</a>
                 </div>
-                <div class="col-4">
-                    <a href="#" class="btn btn-primary">Grafico</a>
-                </div>
-              </div>
             </div>
-          </div>
-          <!-- Codigo de bienvenida-->
-      </div>
-      <div class="col">
-        <app-form-data></app-form-data>
-      </div>
+        </nav>
+        <!-- Texto de bienvenida a la plataforma -->
+        <div class="texto-landing">
+            <h1>GraphicJS</h1>
+            <p>Optimiza tus procesos a trav&eacute;s de esta herramienta
+                que har&aacute; tus c&aacute;lculos de una forma eficaz y sencilla.
+                Una vez la uses no podr&aacute;s dejarla.
+            </p>
+            <h2>¡Empieza ahora!</h2>
+        </div>
+        <!-- Botones para empezar a usar la plataforma -->
+        <div class="botones-landing">
+            <form action="/metodo-grafico" method="get">
+                <button type="submit" class="boton boton-principal">M&eacute;todo Gr&aacute;fico</button>
+            </form>
+
+            <form action="/metodo-dos-fases" method="get">
+                <button type="submit" class="boton boton-principal">M&eacute;todo Dos Fases</button>
+            </form>
+        </div>
     </div>
+
+    <!-- Panel lateral derecho -->
+    <div class="right-container">
+        <!-- Menu navbar para dispositivos con ancho mayor a 1000px -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">M&eacute;todos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- scripts de bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

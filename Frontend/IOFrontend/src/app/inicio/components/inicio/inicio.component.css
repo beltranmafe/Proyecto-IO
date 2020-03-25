@@ -1,0 +1,99 @@
+/* Contenedores */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
+    width: 50%;
+}
+
+.right-container {
+    background-image: url("../../../../../../../Backend/images/diseño-landpage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #2E1C3B;
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+    width: 50%;
+}
+
+/* Menus */
+nav {
+    width: 80%;
+    margin-top: 8px;
+    background-color: #8C55B0;
+}
+
+.nav-responsive {
+    width: 100%;
+    background-color: #2E1C3B;
+}
+
+#boton-menu-responsive {
+    background-color: #2E1C3B;
+    border: none;
+    display: none;
+}
+
+#boton-menu-responsive img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Texto de bienvenida */
+
+.texto-landing p, h1, h2{
+    text-align: center;
+    padding: 0px 16px;
+}
+
+.botones-landing {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+/* Media queries para diseño responsive */
+
+@media (max-width: 1000px){
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 100vh;   
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    #boton-menu-responsive {
+        display: inline;
+    }
+
+    .menu-resposive {
+        background-color: #8C55B0;
+        color: #2E1C3B;
+    }
+
+    .dropdown-item:hover {
+        background-color: #EBDAF7
+    }
+
+}
+
+@media (max-width: 600px){
+    .botones-landing {
+        flex-direction: column;
+        align-items: center;
+    }
+}
