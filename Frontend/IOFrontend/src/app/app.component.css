@@ -1,5 +1,5 @@
 /* Variables */
-:root {
+html {
     /* --third-color: #53227b; */
     --primary-color: #8C55B0;
     --secondary-color: #4B2663;
@@ -20,16 +20,16 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #2E1C3B; 
-    color: #EBDAF7;
+    background-color: var(--black-color); 
+    color: var(--white-color);
 }
 
 /* ------ navbar ------ */
 nav {
-    font-size: 16px;
+    font-size: var(--font-size-p-pq);
     width: 100%;
     height: 5em;
-    background-color: #2E1C3B;
+    background-color: var(--black-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,19 +46,19 @@ nav ul {
 }
 
 nav ul a{
-    color: #EBDAF7;
+    color: var(--white-color);
     text-decoration: none;
 }
 
 nav ul a:hover {
     cursor: pointer;
-    color: #43B072;
+    color: var(--accent-color-1);
     text-decoration: none;
 }
 
 #logo {
-    max-width: 5em;
-    max-height: 5em;
+    width: 5em;
+    height: 5em;
     margin-left: 16px;
 }
 
@@ -80,18 +80,18 @@ button:focus {
 }
 
 .boton-principal{
-    background-color: #8C55B0;
-    color: #2E1C3B;
-    font-size: 20px;
-    box-shadow: 3px 3px 6px #4B2663;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-size: var(--font-size-p);
+    box-shadow: 3px 3px 6px var(--secondary-color);
 }
 
 .boton-principal:hover {
-    box-shadow: inset 3px 3px 6px #4B2663;
+    box-shadow: inset 3px 3px 6px var(--secondary-color);
 }
 
 .boton-calcular {
-    font-size: 16px;
+    font-size: var(--font-size-p-pq);
     margin: 8px;
     width: 100px;
     height: 40px;
@@ -105,48 +105,24 @@ button:focus {
 
 /* ------ textos ------ */
 p{
-    font-size: 20px;
+    font-size: var(--font-size-p);
 }
 
 h1{
-    font-size: 72px;
+    font-size: var(--font-size-h1);
 }
 
 h2{
-    font-size: 64px;
+    font-size: var(--font-size-h2);
 }
 
-h3{
-    font-size:  32px;
+h2{
+    font-size: var(--font-size-h3);
 }
 
 /* ------ media quieries ------ */
 
 @media (max-width: 1000px){
-    nav {
-        font-size: 12px;
-    }
-
-    /* ------ textos ------ */
-    p{
-        font-size: 16px;
-    }
-
-    h1{
-        font-size: 56px;
-    }
-
-    h2{
-        font-size: 40px;
-    }
-
-    h3{
-        font-size: 24px;
-    }
-
-    .boton-principal{
-        font-size: 16px;
-    }
     :root {
         --font-size-h1: 56px;
         --font-size-h2: 40px;

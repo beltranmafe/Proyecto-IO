@@ -16,7 +16,7 @@
     background-image: url("../../../../../../../Backend/images/diseño-landpage.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #2E1C3B;
+    background-color: var(--black-color);
     margin-top: -8px;
     display: flex;
     justify-content: center;
@@ -28,16 +28,16 @@
 nav {
     width: 80%;
     margin-top: 8px;
-    background-color: #8C55B0;
+    background-color: var(--primary-color);
 }
 
 .nav-responsive {
     width: 100%;
-    background-color: #2E1C3B;
+    background-color: var(--black-color);
 }
 
 #boton-menu-responsive {
-    background-color: #2E1C3B;
+    background-color: var(--black-color);
     border: none;
     display: none;
 }
@@ -81,12 +81,12 @@ nav {
     }
 
     .menu-resposive {
-        background-color: #8C55B0;
-        color: #2E1C3B;
+        background-color: var(--primary-color);
+        color: var(--black-color);
     }
 
     .dropdown-item:hover {
-        background-color: #EBDAF7
+        background-color: var(--white-color)
     }
 
 }
